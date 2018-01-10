@@ -42,7 +42,7 @@ COPY conf.d /etc/puppetlabs/defaults/conf.d
 VOLUME /etc/puppetlabs/puppet/ssl/
 # /etc/puppetlabs/puppetdb/ssl is automatically populated from here and
 # doesn't need a separate volume.
-VOLUME /etc/puppetlabs/puppetdb/conf.d
+VOLUME /etc/puppetlabs/puppetdb
 
 COPY start_puppetdb.sh /etc/service/puppetdb/run
 
